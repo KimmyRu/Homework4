@@ -1,0 +1,363 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+:root {
+    --pink : #FF6464;
+    --pale-blue : #EDF7FA;
+    --dark-blue : #21243D;
+    --light-gray : #8695A4;
+    --bottom-line : #E0E0E0;
+}
+
+body {
+    color: var(--dark-blue);
+    max-width: 1024px;
+    margin: auto;
+    
+}
+
+.main-page {
+    background-color: #fbf9f9ec;
+}
+
+header {
+    box-shadow: 0px 0px 0px 2px #9fb4f2;
+	background: rgb(0,141,158);
+background: linear-gradient(41deg, rgba(0,141,158,1) 4%, rgba(78,153,189,1) 39%, rgba(15,169,191,1) 55%, rgba(47,255,253,1) 99%);
+	border-radius:10px;
+	border:1px solid #7789c0;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	padding:12px 37px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
+    border-radius: 10px 10px 0px 0px;
+
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+}
+
+header > a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    padding-inline: 1rem;
+}
+
+header > a:hover {
+    background-color: rgb(58, 122, 232);
+    border-radius: 1rem;
+}
+
+.intro-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding-inline: 15%;
+    padding-block: 4.5rem;
+    gap: 7rem;
+}
+
+.intro-content  p {
+    padding-block: 2rem;
+}
+
+.Profile-Pic {
+    border-radius: 50%;
+    background-color: var(--pale-blue);
+    padding-bottom: 1%;
+   
+}
+
+.Profile-Pic > img {
+    border-radius: 50%;
+    width: 250px;
+
+}
+
+.intro-content  input[type=button] {
+	box-shadow:inset 0px 1px 0px 0px #f7c5c0;
+	background:linear-gradient(to bottom, #fc8d83 5%, #e4685d 100%);
+	background-color:#fc8d83;
+	border-radius:6px;
+	border:1px solid #d83526;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;
+}
+
+.introduce input[type=button]:hover {
+	background:linear-gradient(to bottom, #e99088 5%, #fc8d83 100%);
+	background-color:#d48f89;
+}
+
+.subheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-block: 1rem;
+    padding-inline: 15%;
+    background-color:rgb(168, 230, 233);
+    border-radius: 2px 0px;
+ 
+
+}
+
+.subheader > a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #a7e2ed;
+}
+
+.post-example {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 15%;
+    background: rgb(0,141,158);
+    background: linear-gradient(41deg, rgba(0,141,158,1) 4%, rgba(78,153,189,1) 39%, rgba(15,169,191,1) 55%, rgba(47,255,253,1) 99%);
+    gap: 2rem;
+    padding-bottom: 2rem;
+    
+}
+
+.blog{
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #fff;
+    padding-top: 4.5rem;
+}
+
+.Blog > h1 {
+    font-size: 3rem;
+}
+
+.Blog > .post {
+    width: 100%;
+    border-bottom: 1px solid var(--bottom-line);
+}
+
+.post {
+    position: relative;
+    width: 50%;
+    background-color: #FFF;
+    padding: 1.5rem 1rem;
+}
+
+.post > a {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.post:hover {
+    background-color: #0f1b36;
+    color: var(--pale-blue);
+}
+
+.post-date-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-block: 1rem;
+  
+}
+
+.post-date-title .date {
+    border-right: 1px solid black;
+    padding-right: 10%;
+    margin-right: 10%;
+}
+
+.feature-work {
+    padding-inline: 15%;
+    padding-block: 1rem;
+
+}
+
+.feature-work > p {
+    font-size: 1.2rem;
+}
+
+.feature-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--bottom-line);
+    gap: 1rem;
+
+    position: relative;
+
+}
+
+.feature-card > a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.feature-img {
+    min-width: 250px;
+    height: 180px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.feature-info {
+    min-width: 250px;
+}
+
+.feature-img img {
+    width: 250px;
+
+}
+
+.feature-content  p {
+    font-size: 1rem;
+} 
+
+.feature-date-title {
+    display: flex;
+    gap: 2rem;
+    padding-block: 1rem;
+}
+
+.feature-date-title > p {
+    color: var(--light-gray);
+}
+
+.year {
+    background-color: #21243D;
+    color: #FFF;
+    padding: 0 0.5rem;
+    border-radius: 1rem;
+}
+
+.work {
+    padding-top: 4.5rem;
+} 
+
+.work > h1 {
+    font-size: 3rem;
+}
+
+.work-detail {
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.work-detail .feature-info {
+    padding-top: 3rem;
+}
+
+.work-detail > .feature-img {
+    height: 460px;
+    width: 100%;
+}
+
+.work-detail img {
+   width: 100%;
+}
+
+.work-detail h1 {
+    width: 70%;
+}
+
+.work-detail .feature-date-title > p {
+    color: var(--dark-blue);
+}
+
+.work-detail:hover .feature-img{
+    zoom: 1;
+}
+
+footer {
+    color: #000000;
+    padding: 15px 15px;
+    min-height: 4vh;
+    margin-top: 3vh;
+    border-top: 1.5px solid #999999;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+    padding: 10px;
+    font-size: 50px;
+    width: 80px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+
+  .fa-flickr {
+    background: #f40083;
+    color: white;
+    padding: 10px;
+    font-size: 50px;
+    width: 80px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+    padding: 10px;
+    font-size: 50px;
+    width: 80px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+
+  .fa-reddit {
+    background: #ff5700;
+    color: white;
+    padding: 10px;
+    font-size: 50px;
+    width: 80px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+    padding: 10px;
+    font-size: 50px;
+    width: 80px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+
